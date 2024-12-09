@@ -1,0 +1,811 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good afternoon", "What's up?"],
+      "responses": ["Hi there! How can I assist you with your trip planning today?"]
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["Bye", "See you later", "Goodbye", "Catch you later"],
+      "responses": ["Goodbye! Have a great trip!"]
+    },
+    {
+      "tag": "destination_suggestion",
+      "patterns": ["Suggest a travel destination", "Where should I go?", "Best places for a vacation"],
+      "responses": [
+        "How about Paris? It's beautiful this time of year.",
+        "Have you considered Bali? It's perfect for relaxation.",
+        "You might love exploring Tokyo for its culture and food."
+      ]
+    },
+    {
+      "tag": "travel_mode",
+      "patterns": ["How can I travel there?", "What are my travel options?", "Best way to reach there"],
+      "responses": [
+        "You can take a flight, drive, or travel by train. What do you prefer?",
+        "Flying is the quickest option, but road trips can be fun too!"
+      ]
+    },
+    {
+      "tag": "accommodation",
+      "patterns": [
+        "Where can I stay?",
+        "Suggest some hotels",
+        "Recommend accommodations"
+      ],
+      "responses": [
+        "You can check out Hilton or Marriott for a comfortable stay.",
+        "For budget-friendly options, consider Airbnb or Booking.com."
+      ]
+    },
+    {
+      "tag": "activities",
+      "patterns": [
+        "What can I do there?",
+        "Fun activities to do",
+        "Suggest things to do"
+      ],
+      "responses": [
+        "You can explore local landmarks, try adventure sports, or visit museums.",
+        "Don't miss the food tours and local markets for a cultural experience!"
+      ]
+    },
+    {
+      "tag": "budget_planning",
+      "patterns": [
+        "How much will it cost?",
+        "What's the budget for this trip?",
+        "Estimate the trip expenses"
+      ],
+      "responses": [
+        "A trip to Bali for a week can cost around $1500 including flights and accommodations.",
+        "For Paris, the average budget for a week is approximately $2000."
+      ]
+    },
+    {
+      "tag": "family_trip",
+      "patterns": [
+        "I want to plan a family trip",
+        "Best places for a family vacation",
+        "Suggest destinations for a family trip"
+      ],
+      "responses": [
+        "Disneyland is a great option for families with kids.",
+        "Consider visiting a beach destination like Hawaii for family fun."
+      ]
+    },
+    {
+      "tag": "friends_trip",
+      "patterns": [
+        "Plan a trip with friends",
+        "Best places for a trip with friends",
+        "Fun destinations for friends"
+      ],
+      "responses": [
+        "Las Vegas is perfect for a fun trip with friends.",
+        "You could also explore Goa, which is famous for its vibrant nightlife."
+      ]
+    },
+    {
+      "tag": "weather_check",
+      "patterns": [
+        "What's the weather like there?",
+        "Is it good to visit now?",
+        "Weather conditions for travel"
+      ],
+      "responses": [
+        "The Maldives has sunny weather in December, perfect for beaches.",
+        "Check the weather forecast for specific dates to plan accordingly."
+      ]
+    },
+    {
+      "tag": "covid_restrictions",
+      "patterns": [
+        "Are there any travel restrictions?",
+        "COVID-19 rules for traveling",
+        "Is it safe to travel?"
+      ],
+      "responses": [
+        "Check the latest COVID-19 travel guidelines for your destination before planning.",
+        "Many destinations require a negative test or proof of vaccination."
+      ]
+    },
+    {
+      "tag": "packing_suggestions",
+      "patterns": [
+        "What should I pack?",
+        "Packing tips for a trip",
+        "Things to carry for a vacation"
+      ],
+      "responses": [
+        "Carry weather-appropriate clothes, travel documents, and toiletries.",
+        "Don't forget essentials like sunscreen, a power bank, and a first aid kit!"
+      ]
+    },
+    {
+      "tag": "food_suggestions",
+      "patterns": [
+        "Where can I eat?",
+        "Food recommendations for my trip",
+        "Best restaurants to try"
+      ],
+      "responses": [
+        "Try the local cuisine; you might find hidden gems in street food.",
+        "Check out popular restaurants on TripAdvisor for reviews."
+      ]
+    },
+  {
+      "tag": "travel_destinations",
+      "patterns": [
+          "Suggest some travel destinations.",
+          "What are the best places to visit?",
+          "Recommend famous tourist spots.",
+          "Where should I go for a vacation?",
+          "Best travel destinations in the world?"
+      ],
+      "responses": [
+          "Some popular travel destinations are Paris, Bali, Maldives, Tokyo, and Switzerland."
+      ]
+  },
+  {
+      "tag": "budget_travel",
+      "patterns": [
+          "What is the budget for a vacation?",
+          "Suggest budget-friendly places.",
+          "How much will a trip cost?",
+          "Traveling on a budget recommendations?",
+          "Affordable travel destinations?"
+      ],
+      "responses": [
+          "For budget-friendly travel, consider places like Thailand, Vietnam, Nepal, or Indonesia."
+      ]
+  },
+  {
+      "tag": "weekend_trips",
+      "patterns": [
+          "Suggest a weekend trip.",
+          "Where can I go for a weekend getaway?",
+          "Good weekend travel destinations?",
+          "Short weekend trips near me.",
+          "Best weekend destinations?"
+      ],
+      "responses": [
+          "For a weekend trip, consider destinations like Napa Valley, Lake Tahoe, Goa, or Ooty."
+      ]
+  },
+  {
+      "tag": "one_day_trip",
+      "patterns": [
+          "What are some one-day trip options?",
+          "Where can I go for a short trip?",
+          "Best one-day travel destinations?",
+          "Recommend places for a day trip.",
+          "One-day trip ideas?"
+      ],
+      "responses": [
+          "Consider one-day trips to places like Rishikesh, Niagara Falls, or a local national park."
+      ]
+  },
+  {
+      "tag": "international_travel",
+      "patterns": [
+          "What are the best countries to visit?",
+          "Suggest international travel destinations.",
+          "Where can I travel abroad?",
+          "Best international vacation spots?",
+          "Top countries to explore?"
+      ],
+      "responses": [
+          "Some top international travel destinations are Japan, Italy, New Zealand, and Canada."
+      ]
+  },
+  {
+      "tag": "travel_india",
+      "patterns": [
+          "What are the best places to visit in India?",
+          "Suggest Indian travel destinations.",
+          "Where should I travel in India?",
+          "Popular tourist places in India?",
+          "Best states to visit in India?"
+      ],
+      "responses": [
+          "Some of the best states to visit in India are Kerala, Rajasthan, Himachal Pradesh, Goa, and Sikkim."
+      ]
+  },
+  {
+      "tag": "state_travel_india",
+      "patterns": [
+          "Which Indian states are best for travel?",
+          "Popular travel destinations in India?",
+          "Best places to visit in different Indian states?",
+          "Tourist attractions by state in India?",
+          "Travel suggestions in India?"
+      ],
+      "responses": [
+          "Explore Rajasthan for palaces, Kerala for backwaters, Himachal Pradesh for mountains, and Goa for beaches."
+      ]
+  },
+  {
+      "tag": "travel_activities",
+      "patterns": [
+          "What are some fun travel activities?",
+          "Suggest activities to do on vacation.",
+          "What can I do while traveling?",
+          "Fun things to do while on a trip.",
+          "Best vacation activities?"
+      ],
+      "responses": [
+          "You can try sightseeing, hiking, beach hopping, cultural tours, or wildlife safaris."
+      ]
+  },
+  {
+      "tag": "adventure_sports",
+      "patterns": [
+          "What are some adventure sports to try?",
+          "Suggest adventure sports destinations.",
+          "Where can I do adventure sports?",
+          "Best places for adventure sports?",
+          "Adventure sports recommendations?"
+      ],
+      "responses": [
+          "Try skydiving in Dubai, bungee jumping in New Zealand, paragliding in Switzerland, or scuba diving in the Maldives."
+      ]
+  },
+  {
+      "tag": "seasonal_destinations",
+      "patterns": [
+          "What are the best winter destinations?",
+          "Where should I go during summer?",
+          "Suggest fall travel destinations.",
+          "Best places to visit in spring?",
+          "Seasonal travel suggestions?"
+      ],
+      "responses": [
+          "For winter, try Switzerland or Alaska. For summer, explore Bali or Hawaii. Visit Japan for cherry blossoms in spring or New England for fall colors."
+      ]
+  },
+   {
+    "tag": "seven_wonders_travel",
+    "patterns": [
+        "What are the 7 Wonders of the World?",
+        "Suggest travel plans for the seven wonders.",
+        "Which are the seven wonders I can visit?",
+        "Best way to explore the 7 Wonders of the World?",
+        "Tell me about the seven wonders travel destinations."
+    ],
+    "responses": [
+        "The 7 Wonders of the World are: Great Wall of China, Petra, Christ the Redeemer, Machu Picchu, Chichen Itza, Roman Colosseum, and the Taj Mahal."
+    ]
+},
+{
+    "tag": "seven_wonders_route_map",
+    "patterns": [
+        "What is the route map for the seven wonders?",
+        "How can I travel to all the 7 Wonders of the World?",
+        "Suggest a travel route for the seven wonders.",
+        "Route map to visit seven wonders of the world?",
+        "What is the best route for visiting all the seven wonders?"
+    ],
+    "responses": [
+        "A recommended travel route could be: Start in China (Great Wall), head to India (Taj Mahal), fly to Jordan (Petra), travel to Italy (Colosseum), continue to Mexico (Chichen Itza), visit Peru (Machu Picchu), and finish in Brazil (Christ the Redeemer)."
+    ]
+},
+{
+    "tag": "great_wall_china",
+    "patterns": [
+        "Tell me about the Great Wall of China.",
+        "Where is the Great Wall of China?",
+        "How do I reach the Great Wall of China?",
+        "Is the Great Wall of China worth visiting?",
+        "Guide to visiting the Great Wall of China?"
+    ],
+    "responses": [
+        "The Great Wall of China is in northern China. You can visit popular sections near Beijing, like Badaling and Mutianyu."
+    ]
+},
+{
+    "tag": "taj_mahal_india",
+    "patterns": [
+        "Tell me about the Taj Mahal.",
+        "Where is the Taj Mahal located?",
+        "How can I travel to the Taj Mahal?",
+        "What is special about the Taj Mahal?",
+        "Best time to visit the Taj Mahal?"
+    ],
+    "responses": [
+        "The Taj Mahal is in Agra, India. It's a UNESCO World Heritage Site and a symbol of love built by Emperor Shah Jahan."
+    ]
+},
+{
+    "tag": "machu_picchu_peru",
+    "patterns": [
+        "Where is Machu Picchu located?",
+        "How do I reach Machu Picchu?",
+        "Tell me about Machu Picchu.",
+        "Best time to visit Machu Picchu?",
+        "What is special about Machu Picchu?"
+    ],
+    "responses": [
+        "Machu Picchu is in Peru, nestled in the Andes Mountains. It's best visited from May to September, with access via trains from Cusco or guided treks."
+    ]
+},
+{
+    "tag": "christ_redeemer_brazil",
+    "patterns": [
+        "Where is Christ the Redeemer?",
+        "How can I visit Christ the Redeemer?",
+        "What is special about Christ the Redeemer?",
+        "Best time to see Christ the Redeemer?",
+        "Tell me about the Christ the Redeemer statue."
+    ],
+    "responses": [
+        "Christ the Redeemer is in Rio de Janeiro, Brazil. It's one of the world's largest Art Deco statues, best visited from December to March."
+    ]
+},
+{
+    "tag": "chichen_itza_mexico",
+    "patterns": [
+        "Where is Chichen Itza?",
+        "Tell me about Chichen Itza.",
+        "How do I travel to Chichen Itza?",
+        "What makes Chichen Itza special?",
+        "Best time to visit Chichen Itza?"
+    ],
+    "responses": [
+        "Chichen Itza is in Mexico's Yucatan Peninsula. It’s an ancient Mayan city known for its El Castillo pyramid."
+    ]
+},
+{
+    "tag": "petra_jordan",
+    "patterns": [
+        "Tell me about Petra in Jordan.",
+        "Where is Petra located?",
+        "How can I visit Petra?",
+        "What is special about Petra?",
+        "Is Petra worth visiting?"
+    ],
+    "responses": [
+        "Petra is an ancient archaeological site in southern Jordan, famous for its rock-cut architecture and historical significance."
+    ]
+},
+{
+    "tag": "roman_colosseum_italy",
+    "patterns": [
+        "Tell me about the Roman Colosseum.",
+        "Where is the Roman Colosseum located?",
+        "How do I visit the Colosseum in Italy?",
+        "What makes the Colosseum special?",
+        "Best time to see the Roman Colosseum?"
+    ],
+    "responses": [
+        "The Roman Colosseum is in Rome, Italy. It’s a massive amphitheater known for its gladiatorial games and historical architecture."
+    ]
+}
+,
+{
+    "tag": "summer_destinations",
+    "patterns": [
+        "What are the best places to visit in summer?",
+        "Where should I go during summer?",
+        "Best summer travel destinations?",
+        "Where to visit in India during summer?"
+    ],
+    "responses": [
+        "Consider visiting hill stations like Shimla, Manali, Darjeeling, or the beaches in Goa and Kerala. The cool weather and scenic beauty make them ideal summer destinations."
+    ]
+},
+{
+    "tag": "rainy_destinations",
+    "patterns": [
+        "What are the best places to visit in the rainy season?",
+        "Where should I go during the monsoon?",
+        "Best places to visit during rain?",
+        "Where to travel in India in the rainy season?"
+    ],
+    "responses": [
+        "The monsoon season is perfect for visiting places like Munnar in Kerala, Udupi in Karnataka, or the Western Ghats. Enjoy the lush greenery and waterfalls during this time."
+    ]
+},
+{
+    "tag": "autumn_destinations",
+    "patterns": [
+        "Where to travel in autumn?",
+        "What are the best autumn destinations?",
+        "Best places to visit in autumn?",
+        "Where to go in India during autumn?"
+    ],
+    "responses": [
+        "Autumn is perfect for visiting places like Jaipur, Jodhpur, or Udaipur for Rajasthan's rich culture and festivals. Other places like Rishikesh and Nainital also have great weather during autumn."
+    ]
+},
+{
+    "tag": "famous_temples_in_india",
+    "patterns": [
+        "What are the famous temples in India?",
+        "Tell me about the temples in India.",
+        "Which are the most famous temples in India?",
+        "What temples should I visit in India?"
+    ],
+    "responses": [
+        "India has many famous temples. Some must-visit ones include the Kashi Vishwanath Temple in Varanasi, the Golden Temple in Amritsar, the Jagannath Temple in Puri, and the Meenakshi Temple in Madurai."
+    ]
+},
+{
+    "tag": "temples_in_uttar_pradesh",
+    "patterns": [
+        "What are the famous temples in Uttar Pradesh?",
+        "Where are the best temples in Uttar Pradesh?",
+        "Famous temples in Uttar Pradesh?"
+    ],
+    "responses": [
+        "Uttar Pradesh is home to the famous Kashi Vishwanath Temple in Varanasi, the Banke Bihari Temple in Vrindavan, and the Lord Rama temple in Ayodhya."
+    ]
+},
+{
+    "tag": "temples_in_tamil_nadu",
+    "patterns": [
+        "Tell me about temples in Tamil Nadu.",
+        "What are the famous temples in Tamil Nadu?",
+        "Which temples should I visit in Tamil Nadu?"
+    ],
+    "responses": [
+        "Tamil Nadu is known for its grand temples like the Meenakshi Temple in Madurai, the Brihadeeswarar Temple in Thanjavur, and the Ranganathaswamy Temple in Srirangam."
+    ]
+},
+{
+    "tag": "temples_in_kerala",
+    "patterns": [
+        "What temples are in Kerala?",
+        "Tell me about temples in Kerala.",
+        "Famous temples in Kerala?"
+    ],
+    "responses": [
+        "In Kerala, some of the famous temples are the Sabarimala Temple, the Padmanabhaswamy Temple in Thiruvananthapuram, and the Guruvayur Temple."
+    ]
+},
+{
+    "tag": "temples_in_karnataka",
+    "patterns": [
+        "What are the famous temples in Karnataka?",
+        "Where are the best temples in Karnataka?",
+        "Famous temples in Karnataka?"
+    ],
+    "responses": [
+        "Karnataka is home to famous temples like the Virupaksha Temple in Hampi, the Sri Chamarajendra Park Temple in Bengaluru, and the Kukke Subramanya Temple."
+    ]
+},
+{
+    "tag": "temples_in_maharashtra",
+    "patterns": [
+        "Tell me about temples in Maharashtra.",
+        "What are the famous temples in Maharashtra?",
+        "Where should I visit temples in Maharashtra?"
+    ],
+    "responses": [
+        "Maharashtra is home to famous temples like the Shirdi Sai Baba Temple, the Siddhivinayak Temple in Mumbai, and the Trimbakeshwar Temple in Trimbak."
+    ]
+},
+{
+    "tag": "temples_in_andhra_pradesh",
+    "patterns": [
+        "What are the famous temples in Andhra Pradesh?",
+        "Where are the temples in Andhra Pradesh?",
+        "Famous temples in Andhra Pradesh?"
+    ],
+    "responses": [
+        "Andhra Pradesh is famous for temples like the Tirumala Venkateswara Temple in Tirupati, the Kanaka Durga Temple in Vijayawada, and the Sri Kalahasti Temple."
+    ]
+},
+{
+"tag": "temples_in_arunachal_pradesh",
+"patterns": [
+    "What are the famous temples in Arunachal Pradesh?",
+    "Where are the temples in Arunachal Pradesh?",
+    "Tell me about temples in Arunachal Pradesh."
+],
+"responses": [
+    "Arunachal Pradesh is home to the famous Tawang Monastery, the Namsai Buddha Vihara, and the Golden Pagoda Temple."
+]
+},
+{
+"tag": "temples_in_assam",
+"patterns": [
+    "What are the famous temples in Assam?",
+    "Tell me about temples in Assam.",
+    "Where to visit temples in Assam?"
+],
+"responses": [
+    "Assam has some famous temples like the Kamakhya Temple in Guwahati, the Umananda Temple, and the Navagraha Temple."
+]
+},
+{
+"tag": "temples_in_bihar",
+"patterns": [
+    "What are the famous temples in Bihar?",
+    "Where are the best temples in Bihar?",
+    "Tell me about temples in Bihar."
+],
+"responses": [
+    "Bihar is famous for the Mahabodhi Temple in Bodh Gaya, the Baba Vishwanath Temple in Varanasi, and the Patna Sahib Gurudwara."
+]
+},
+{
+"tag": "temples_in_chhattisgarh",
+"patterns": [
+    "What are the famous temples in Chhattisgarh?",
+    "Tell me about temples in Chhattisgarh.",
+    "Where to visit temples in Chhattisgarh?"
+],
+"responses": [
+    "Chhattisgarh has temples like the Rajiv Lochan Temple in Rajim, the Bhoramdeo Temple, and the Chhattisgarh Mahadev Temple."
+]
+},
+{
+"tag": "temples_in_goa",
+"patterns": [
+    "What are the famous temples in Goa?",
+    "Tell me about temples in Goa.",
+    "Where to visit temples in Goa?"
+],
+"responses": [
+    "Goa is home to famous temples like the Shanta Durga Temple, the Mangeshi Temple, and the Brahma Temple."
+]
+},
+{
+"tag": "temples_in_gujarat",
+"patterns": [
+    "What are the famous temples in Gujarat?",
+    "Tell me about temples in Gujarat.",
+    "Where are the best temples in Gujarat?"
+],
+"responses": [
+    "Gujarat is famous for the Somnath Temple, the Dwarkadhish Temple in Dwarka, and the Akshardham Temple in Gandhinagar."
+]
+},
+{
+"tag": "temples_in_haryana",
+"patterns": [
+    "What are the famous temples in Haryana?",
+    "Where to visit temples in Haryana?",
+    "Tell me about temples in Haryana."
+],
+"responses": [
+    "Haryana has famous temples like the Bhima Devi Temple in Pinjore, the Sheetala Mata Temple in Gurgaon, and the Narnaul Shivalaya."
+]
+},
+{
+"tag": "temples_in_himachal_pradesh",
+"patterns": [
+    "What are the famous temples in Himachal Pradesh?",
+    "Tell me about temples in Himachal Pradesh.",
+    "Where are the best temples in Himachal Pradesh?"
+],
+"responses": [
+    "Himachal Pradesh is home to the famous Hidimba Devi Temple in Manali, the Baijnath Temple, and the Jwalamukhi Temple."
+]
+},
+{
+"tag": "temples_in_jharkhand",
+"patterns": [
+    "What are the famous temples in Jharkhand?",
+    "Tell me about temples in Jharkhand.",
+    "Where to visit temples in Jharkhand?"
+],
+"responses": [
+    "In Jharkhand, you can visit temples like the Baidyanath Temple in Deoghar, the Jagannath Temple in Ranchi, and the Tarapith Temple."
+]
+},
+{
+"tag": "temples_in_manipur",
+"patterns": [
+    "What are the famous temples in Manipur?",
+    "Tell me about temples in Manipur.",
+    "Where to visit temples in Manipur?"
+],
+"responses": [
+    "Manipur has famous temples like the Shri Govindajee Temple in Imphal and the Shree Shyam Temple."
+]
+},
+{
+"tag": "temples_in_meghalaya",
+"patterns": [
+    "What are the famous temples in Meghalaya?",
+    "Tell me about temples in Meghalaya.",
+    "Where to visit temples in Meghalaya?"
+],
+"responses": [
+    "Meghalaya has the famous Nartiang Durga Temple, and the Mahadev Temple in Nongstoin."
+]
+},
+{
+"tag": "temples_in_mizoram",
+"patterns": [
+    "What are the famous temples in Mizoram?",
+    "Tell me about temples in Mizoram.",
+    "Where to visit temples in Mizoram?"
+],
+"responses": [
+    "Mizoram is known for its temple of the Thasiam Khamtse and various smaller village temples."
+]
+},
+{
+"tag": "temples_in_nagaland",
+"patterns": [
+    "What are the famous temples in Nagaland?",
+    "Tell me about temples in Nagaland.",
+    "Where to visit temples in Nagaland?"
+],
+"responses": [
+    "Nagaland has unique temples like the Baptist Church of Dimapur and other regional religious sites."
+]
+},
+{
+"tag": "temples_in_odisha",
+"patterns": [
+    "What are the famous temples in Odisha?",
+    "Tell me about temples in Odisha.",
+    "Where to visit temples in Odisha?"
+],
+"responses": [
+    "Odisha is known for the Jagannath Temple in Puri, the Lingaraj Temple in Bhubaneswar, and the Sun Temple in Konark."
+]
+},
+{
+"tag": "temples_in_punjab",
+"patterns": [
+    "What are the famous temples in Punjab?",
+    "Tell me about temples in Punjab.",
+    "Where to visit temples in Punjab?"
+],
+"responses": [
+    "Punjab is home to the Golden Temple in Amritsar, the Durgiana Temple, and the Mata Lal Devi Temple."
+]
+},
+{
+"tag": "temples_in_rajasthan",
+"patterns": [
+    "What are the famous temples in Rajasthan?",
+    "Tell me about temples in Rajasthan.",
+    "Where to visit temples in Rajasthan?"
+],
+"responses": [
+    "Rajasthan is famous for the Eklingji Temple, the Dilwara Temples, and the Brahma Temple in Pushkar."
+]
+},
+{
+"tag": "temples_in_sikkim",
+"patterns": [
+    "What are the famous temples in Sikkim?",
+    "Tell me about temples in Sikkim.",
+    "Where to visit temples in Sikkim?"
+],
+"responses": [
+    "Sikkim is home to the Rumtek Monastery, the Tashiding Monastery, and the Phodong Monastery."
+]
+},
+{
+"tag": "temples_in_telangana",
+"patterns": [
+    "What are the famous temples in Telangana?",
+    "Tell me about temples in Telangana.",
+    "Where to visit temples in Telangana?"
+],
+"responses": [
+    "Telangana has famous temples like the Yadagirigutta Temple, the Birla Mandir in Hyderabad, and the Srisailam Temple."
+]
+},
+{
+"tag": "temples_in_tripura",
+"patterns": [
+    "What are the famous temples in Tripura?",
+    "Tell me about temples in Tripura.",
+    "Where to visit temples in Tripura?"
+],
+"responses": [
+    "In Tripura, you can visit the Tripura Sundari Temple, the Mata Kanchanpur Temple, and the Puran Haveli Temple."
+]
+},
+{
+"tag": "hotel_bookings",
+"patterns": [
+    "Can you help me with hotel bookings?",
+    "Where can I book a hotel?",
+    "Help me find hotels for my trip.",
+    "Suggest a hotel for my trip."
+],
+"responses": [
+    "I can help you find hotels for your trip! You can check websites like Booking.com, Agoda, or use apps like OYO Rooms for quick bookings. Let me know your destination, and I can suggest some options."
+]
+},
+{
+"tag": "hotel_bookings_in_goa",
+"patterns": [
+    "Where can I book a hotel in Goa?",
+    "Suggest hotels in Goa.",
+    "Tell me about hotel bookings in Goa."
+],
+"responses": [
+    "For a great stay in Goa, you can book hotels like The Leela, Goa Marriott Resort, or the Taj Exotica Resort. You can use Booking.com or OYO Rooms for these bookings."
+]
+},
+{
+"tag": "hotel_bookings_in_kerala",
+"patterns": [
+    "Where can I book a hotel in Kerala?",
+    "Suggest hotels in Kerala.",
+    "Tell me about hotel bookings in Kerala."
+],
+"responses": [
+    "In Kerala, you can book hotels like the Kumarakom Lake Resort, The Zuri Kumarakom, or the Taj Kumarakom Resort. Use popular booking sites like Booking.com or OYO Rooms for bookings."
+]
+},
+{
+"tag": "route_planner",
+"patterns": [
+    "Can you help me plan a route for my trip?",
+    "How can I plan a route for visiting multiple places?",
+    "Suggest a route for my trip.",
+    "Help me with a route plan for my journey."
+],
+"responses": [
+    "I can suggest a route for you based on the places you want to visit. You can use tools like Google Maps, Rome2Rio, or a dedicated trip planner like TripIt to organize your route efficiently. Let me know your destination list, and I'll suggest the best routes!"
+]
+},
+{
+"tag": "route_planner_for_7_wonders",
+"patterns": [
+    "Can you help me plan a route to visit the 7 wonders of the world?",
+    "Suggest a travel route for visiting all the 7 wonders.",
+    "What is the best route to visit the 7 wonders?"
+],
+"responses": [
+    "To visit the 7 wonders of the world, start with the Great Wall of China in Beijing, then head to Petra in Jordan, the Taj Mahal in India, Christ the Redeemer in Brazil, Machu Picchu in Peru, the Colosseum in Rome, and end with Chichen Itza in Mexico. You can use a route planner like Google Maps or Rome2Rio to plan your journey."
+]
+},
+{
+"tag": "route_planner_for_india",
+"patterns": [
+    "Can you help me plan a route in India?",
+    "Suggest a travel route in India.",
+    "What is the best route to travel across India?"
+],
+"responses": [
+    "For traveling across India, a great route could be starting from Delhi, visiting Jaipur in Rajasthan, then heading south to Kerala, exploring Goa, then moving to Tamil Nadu and Karnataka. You can use Google Maps to plan the most efficient routes between these cities."
+]
+},
+{
+"tag": "hotel_bookings_in_rajasthan",
+"patterns": [
+    "Where can I book a hotel in Rajasthan?",
+    "Suggest hotels in Rajasthan.",
+    "Tell me about hotel bookings in Rajasthan."
+],
+"responses": [
+    "Rajasthan offers some great hotel options like the Rambagh Palace in Jaipur, Umaid Bhawan Palace in Jodhpur, and the Oberoi Udaivilas in Udaipur. You can book them through Booking.com, or similar platforms."
+]
+},
+{
+"tag": "hotel_bookings_in_mumbai",
+"patterns": [
+    "Where can I book a hotel in Mumbai?",
+    "Suggest hotels in Mumbai.",
+    "Tell me about hotel bookings in Mumbai."
+],
+"responses": [
+    "In Mumbai, popular hotels include the Taj Mahal Palace, The Oberoi, and the Trident Nariman Point. Use Booking.com or OYO Rooms for booking options."
+]
+},
+{
+"tag": "route_planner_for_kerala",
+"patterns": [
+    "Help me plan a route in Kerala.",
+    "What is the best route to travel in Kerala?",
+    "Suggest a route for my Kerala trip."
+],
+"responses": [
+    "A great route for Kerala could start in Kochi, then move to Munnar for scenic beauty, followed by Thekkady for wildlife, and end in Alleppey for backwaters. You can use Google Maps to find the best routes between these places."
+]
+}
+]
+}
